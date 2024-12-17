@@ -1,14 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>todo app</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}
+our TODO app
+{% endblock title %}
+
+{% block body %}
 <h1>Welcome to our TODO app</h1>
 <p>now date {% now "jS F Y H:i" %}</p>
-</body>
-</html>
+{% endblock body %}
